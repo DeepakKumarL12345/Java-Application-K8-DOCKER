@@ -43,7 +43,7 @@ jobs:
 
       - name: Update Deployment YAML
         run: |
-          sed -i "s|image:.*|image: deepakkumarl12345/springboot-app:${TAG}|g" Java-Application-K8-Kubernetes/k8s/deployment.yaml
+          sed -i "s|image:.*|image: deepakkumarl12345/springboot-app:${TAG}|g" Java-Application-K8-Kubernetes/05-java-deployment.yaml
 
       - name: Commit and Push Changes
         run: |
